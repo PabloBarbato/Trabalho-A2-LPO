@@ -1,1 +1,0 @@
-# Trabalho-A2-LPO
