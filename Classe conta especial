@@ -1,29 +1,34 @@
-# Trabalho-A2-LPO
-package ContaEspecial;
-
 public class ContaEspecial extends Conta{
 
-	public double limite; 
-	public double taxa;
-	public int numDias;
-
-	public ContaEspecial (double valores) {
+	private double limite; 
+	private static double taxa = 30
+	
+    public ContaEspecial (double limite) {
 		this.limite = limite;
-		this.taxa = taxa;
+		
 	}
 	
 	public double getLimite () {
 		return limite;
 	}
 	
+	public void setLimite (String limite);
+		this.limite = limite;
+	}
 	public double getTaxa () {
-		return limite;
+		return taxa;
+		
+	public void setTaxa (String taxa);
+		this.taxa = taxa; 
 	}
 	
 	public int getnumDias() {
 		return numero;
 	}
-
-	public void setnumDias (int numDias) {
-		this.numero = num;
+	
+	public void atualiza(int numDias){
+		   if(saldo()) < 0) {
+		     float juros = numDias * taxa/30;
+		     valor -= juros;
+		   }
 	}
